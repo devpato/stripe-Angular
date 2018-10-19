@@ -4,7 +4,15 @@
 
 export const environment = {
   production: false,
-  stripekey: "pk_test_lW1MY7AU5CKwr5EH6W004v9f"
+  firebase: {
+    apiKey: "AIzaSyAcXQO-06624ZzR1-6Q-cEgUANGnWvNR08",
+    authDomain: "stripe-f927f.firebaseapp.com",
+    databaseURL: "https://stripe-f927f.firebaseio.com",
+    projectId: "stripe-f927f",
+    storageBucket: "stripe-f927f.appspot.com",
+    messagingSenderId: "40308826677"
+  },
+  stripeKey: "pk_test_lW1MY7AU5CKwr5EH6W004v9f"
 };
 
 /*
