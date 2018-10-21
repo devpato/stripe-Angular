@@ -10,7 +10,7 @@ declare var StripCheckout: any;
 })
 export class MakePaymentComponent implements OnInit {
   handler: any;
-  amount = 500;
+  amount = 1900;
 
   constructor(private paymentSvc: PaymentService) {}
 
@@ -27,7 +27,7 @@ export class MakePaymentComponent implements OnInit {
 
   handlePayment() {
     this.handler.open({
-      name: "Payment",
+      name: "TAMO Studio",
       excerpt: "Deposit Funds to Account",
       amount: this.amount
     });

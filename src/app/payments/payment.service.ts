@@ -10,9 +10,10 @@ export class PaymentService {
   userId: string;
 
   constructor(private db: AngularFirestore, private afAuth: AngularFireAuth) {
-    this.afAuth.authState.subscribe(auth => {
-      if (auth) this.userId = auth.uid;
-    });
+    db.firestore.settings({ timestampsInSnapshots: true });
+    // this.afAuth.authState.subscribe(auth => {
+    //   if (auth) this.userId = auth.uid;
+    // });
   }
 
   processPayment(token: any, amount: number) {
